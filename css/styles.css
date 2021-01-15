@@ -1,34 +1,27 @@
 * {
   margin: 0px;
-  padding: 0px;
-}
+  padding: 0px; }
 
 body {
-  background-color: #f1f4f7;
-}
+  background-color: #f1f4f7; }
 
 .topbar {
-  display: flex;
-}
+  display: flex; }
 
 .logo {
   background-color: #36454F;
   border-bottom: 1px solid #cedce4;
-  height: 3.49rem;
-}
+  height: 3.49rem; }
 
 .logo h3 {
   color: #5596bb;
-  width: 13.5rem;
-}
+  width: 13.5rem; }
 
 .search {
-  margin-left: 1.288rem;
-}
+  margin-left: 1.288rem; }
 
 .navbar-nav {
-  margin-right: .2rem;
-}
+  margin-right: .2rem; }
 
 .sidenav {
   display: block;
@@ -39,102 +32,77 @@ body {
   overflow: scroll;
   background-color: #36454F;
   color: #cedce4;
-  z-index: 1;
-}
+  z-index: 1; }
 
 #left-side-menu-container ul li {
   list-style: none;
   margin-top: 1.2rem;
   margin-left: 1rem;
-  font-family: 'Montserrat', sans-serif;
-}
+  font-family: "Montserrat", sans-serif; }
 
 #left-side-menu-container ul li a {
-  color: #cedce4;
-}
+  color: #cedce4; }
 
 .nav-header {
   margin: 1.5rem 0 0;
-  font-family: 'Kufam', cursive;
-}
+  font-family: "Kufam", cursive; }
 
 .menu-item {
-  margin-left: 0;
-}
+  margin-left: 0; }
 
 .submenu-item {
-  margin-left: 0;
-}
+  margin-left: 0; }
 
 .page-header-container {
   color: #60666b;
   margin: 1rem 0 1rem;
-  padding-top: 3rem;
-}
+  padding-top: 3rem; }
 
 #content {
   margin: 1rem 1.5rem 0 16.5rem;
-  display: block;
-}
+  display: block; }
 
 .card-title {
-  color: #60666b;
-}
+  color: #60666b; }
 
 .project-top-cards {
   max-height: 10rem;
-  margin-bottom: 1rem;
-}
+  margin-bottom: 1rem; }
 
 .projectsIcon {
-  font-size: 2rem;
-}
+  font-size: 2rem; }
 
 .projectsNumber {
-  color: #60666b;
-}
+  color: #60666b; }
 
 .trending-up {
-  color: green;
-}
+  color: green; }
 
 .trending-down {
-  color: red;
-}
+  color: red; }
 
 .taskTable {
-  overflow-x: scroll;
-}
+  overflow-x: scroll; }
 
 .tableSubTitle {
-  font-size: 11px;
-}
+  font-size: 11px; }
 
 .card-header {
   font-size: 16px;
-  box-shadow: rgba(0, 0, 0, .9);
-  background: linear-gradient(to right, #fff, rgb(230, 228, 228));
-}
+  box-shadow: rgba(0, 0, 0, 0.9);
+  background: linear-gradient(to right, #fff, #e6e4e4); }
 
 @media screen and (max-width: 375px) {
   .logo {
-    display: none;
-  }
+    display: none; }
   #content {
-    margin: 0 1.3rem 0 1rem;
-  }
+    margin: 0 1.3rem 0 1rem; }
   .project-top-card {
     margin: 0px !important;
-    border: none;
-  }
+    border: none; }
   .projectCard {
-    margin-top: 23rem;
-  }
+    margin-top: 23rem; }
   .statusText {
-    font-size: 4vw;
-  }
+    font-size: 4vw; }
   .taskTable {
-    margin-top: 1rem;
-  }
-
-}
+    margin-top: 1rem; } }
