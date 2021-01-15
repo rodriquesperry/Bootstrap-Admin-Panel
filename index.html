@@ -17,50 +17,7 @@
 
 <body>
   <div class="wrapper">
-    <!-- Start Top Nav -->
-    <div class="topbar navbar-light bg-light fixed-top">
-      <div class="logo">
-        <a href="#" class="navbar-brand">
-          <h3>Artifact</h3>
-        </a>
-      </div> 
-      <div class="col-sm-12 col-lg-10">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <button class="navbar-toggler sideMenuToggler mr-auto">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
-    <!-- End Top Nav -->
+    
     <!-- Start Sidenav -->
     <div class="navbar sidenav d-sm-none d-md-block" id="left-side-menu-container">
       <ul>
@@ -73,8 +30,8 @@
             </span>
             <a href="#dashboardSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle menu-item">Dashboards</a>
             <ul class="collapse list-unstyled" id="dashboardSubmenu">
-              <li>
-                <a href="#" class="submenu-item">Home 1</a>
+              <li class="active">
+                <a href="#" class="submenu-item">Projects</a>
               </li>
               <li>
                 <a href="#" class="submenu-item">Home 2</a>
@@ -227,55 +184,255 @@
               </li>
             </ul>
           </li>
-
-
         </ul>
     </div>
 
-
     <!-- Start Main Content Area -->
     <div id="content">
-      <div class="row">
-        <div class="page-header">
-          <h5>Dashboard</h5>
+      <!-- Start Top Nav -->
+    <div class="topbar navbar-light bg-light fixed-top">
+      <div class="logo">
+        <a href="#" class="navbar-brand">
+          <h3 class="text-center">Dashboard</h3>
+        </a>
+      </div> 
+      <div class="col-sm-12 col-lg-10">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button class="navbar-toggler sideMenuToggler mr-auto">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- End Top Nav -->
+    <!-- Page Header -->
+    <div class="row page-header-container">
+      <div class="page-header">
+        <h5>Dashboard</h5>
+      </div>
+    </div>
+    <!-- End Page Header -->
+
+    <!-- Start Cards -->
+    <!-- Headline Cards -->
+    <div class="row">
+      <div class="card-group col-lg-12 project-top-cards">
+        <div class="card col-lg-3 project-top-card">
+          <i class="material-icons text-center mt-3 mb-2 projectsIcon text-muted">work_outline</i>
+            <h3 class="text-center projectsNumber">29</h3>
+            <h6 class="text-center mt-2 text-muted">Total Projects</h6>
+        </div>
+        <div class="card col-lg-3 project-top-card">
+          <i class="material-icons text-center mt-3 mb-2 projectsIcon text-muted">list</i>
+            <h3 class="text-center projectsNumber">125</h3>
+            <h6 class="text-center mt-2 text-muted">Total Tasks</h6>
+        </div>
+        <div class="card col-lg-3 project-top-card">
+          <i class="material-icons text-center mt-3 mb-2 projectsIcon text-muted">people</i>
+            <h3 class="text-center projectsNumber">3</h3>
+            <h6 class="text-center mt-2 text-muted">Members</h6>
+        </div>
+        <div class="card col-lg-3 project-top-card">
+          <i class="material-icons text-center mt-3 mb-2 projectsIcon text-muted">show_chart</i>
+            <h3 class="text-center projectsNumber">29</h3>
+            <h6 class="text-center mt-2 text-muted">Productivity</h6>
         </div>
       </div>
-      <div class="row">
-        <div class="card-group col-lg-12">
-          <div class="card col-lg-3 ">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+    <!-- End Headline Cards -->
+
+    <!-- Project Status Card -->
+    <div class="row">
+      <div class="card projectCard col-lg-5 mx-3">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 text-muted mb-3">Project Status</h6>
+          <canvas id="projectStatusChart" width="200" height="70"></canvas>
+          <div class="row">
+            <div class="col-4 text-center">
+              <i class="material-icons text-center mt-3 mb-2 projectsIcon text-muted trending-up">trending_up</i>
+              <h4 class="projectsNumber">89%</h4>
+              <h6 class="text-muted statusText">Current</h6>
+            </div>
+            <div class="col-4 text-center">
+              <i class="material-icons text-center mt-3 mb-2 projectsIcon text-muted trending-down">trending_down</i>
+              <h4 class="projectsNumber">33%</h4>
+              <h6 class="text-muted statusText">Overdue</h6>
+            </div>
+            <div class="col-4 text-center">
+              <i class="material-icons text-center mt-3 mb-2 projectsIcon text-muted trending-down">trending_down</i>
+              <h4 class="projectsNumber">15%</h4>
+              <h6 class="text-muted statusText">Complete</h6>
             </div>
           </div>
-          <div class="card col-lg-3 ">
-            <img src="..." class="card-img-top" alt="...">
+        </div>  
+      </div>
+      <!-- End Project Status Card -->
+      <!-- Start Task Table Card -->
+      <div class="col">
+        <div class="card taskTable">
+          <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-          <div class="card col-lg-3 ">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-          <div class="card col-lg-3 ">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <div class="card-title">
+                <h5>Tasks</h5>
+              </div>
+              <div class="card-header">
+                <b>107</b> of 205 Complete
+              </div>
+              <table class="table">
+                <tr>
+                  <td>
+                    <h6 class="mr-3">Admin Page - Main Page</h6>
+                  </td>
+                  <td>
+                    <h6 class="mx-2 text-muted tableSubTitle">Status</h6>
+                    <span class="badge badge-success tableSubTitle text-center">Current</span>
+                  </td>
+                  <td>
+                    <h6 class="mx-2 text-muted tableSubTitle text-left">Assigned</h6>
+                    <p class="tableSubTitle text-center align-middle">Rodriques</p>
+                  </td>
+                  <td>
+                    <h6 class="mx-2 text-muted tableSubTitle">Time</h6>
+                    <p class="tableSubTitle text-center align-middle">4h 05min</p>
+
+                  </td>
+                  <td>
+                    <a href="javascript: void(0;)">
+                      <i class="material-icons text-muted">edit</i>
+                    </a>
+                  </td>
+                  <td>
+                    <a href="javascript: void(0;)">
+                      <i class="material-icons text-muted">delete</i>
+                    </a>                  
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h6 class="mr-3">Admin Page - Main Page</h6>
+                  </td>
+                  <td>
+                    <h6 class="mx-2 text-muted tableSubTitle">Status</h6>
+                    <span class="badge badge-success tableSubTitle text-center">Current</span>
+                  </td>
+                  <td>
+                    <h6 class="mx-2 text-muted tableSubTitle text-left">Assigned</h6>
+                    <p class="tableSubTitle text-center align-middle">Robert</p>
+                  </td>
+                  <td>
+                    <h6 class="mx-2 text-muted tableSubTitle">Time</h6>
+                    <p class="tableSubTitle text-center align-middle">0h 40min</p>
+
+                  </td>
+                  <td>
+                    <a href="javascript: void(0;)">
+                      <i class="material-icons text-muted">edit</i>
+                    </a>
+                  </td>
+                  <td>
+                    <a href="javascript: void(0;)">
+                      <i class="material-icons text-muted">delete</i>
+                    </a>                  
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h6 class="mr-3">Admin Page - Main Page</h6>
+                  </td>
+                  <td>
+                    <h6 class="mx-2 text-muted tableSubTitle">Status</h6>
+                    <span class="badge badge-danger tableSubTitle text-center">Overdue</span>
+                  </td>
+                  <td>
+                    <h6 class="mx-2 text-muted tableSubTitle text-left">Assigned</h6>
+                    <p class="tableSubTitle text-center align-middle">Reagan</p>
+                  </td>
+                  <td>
+                    <h6 class="mx-2 text-muted tableSubTitle">Time</h6>
+                    <p class="tableSubTitle text-center align-middle">3h 25min</p>
+
+                  </td>
+                  <td>
+                    <a href="javascript: void(0;)">
+                      <i class="material-icons text-muted">edit</i>
+                    </a>
+                  </td>
+                  <td>
+                    <a href="javascript: void(0;)">
+                      <i class="material-icons text-muted">delete</i>
+                    </a>                  
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <h6 class="mr-3">Admin Page - Main Page</h6>
+                  </td>
+                  <td>
+                    <h6 class="mx-2 text-muted tableSubTitle">Status</h6>
+                    <span class="badge badge-warning tableSubTitle text-center">Complete</span>
+                  </td>
+                  <td>
+                    <h6 class="mx-2 text-muted tableSubTitle text-left">Assigned</h6>
+                    <p class="tableSubTitle text-center align-middle">Ronald</p>
+                  </td>
+                  <td>
+                    <h6 class="mx-2 text-muted tableSubTitle">Time</h6>
+                    <p class="tableSubTitle text-center align-middle">12h 22min</p>
+
+                  </td>
+                  <td>
+                    <a href="javascript: void(0;)">
+                      <i class="material-icons text-muted">edit</i>
+                    </a>
+                  </td>
+                  <td>
+                    <a href="javascript: void(0;)">
+                      <i class="material-icons text-muted">delete</i>
+                    </a>                  
+                  </td>
+                </tr>
+               
+                
+              </table>
             </div>
           </div>
         </div>
-      </div>
+      </div> 
+    </div>
+
+        
+
+  
+    <!-- End Task Table Card -->
+    <!-- End Cards -->
     </div>
   </div>
 

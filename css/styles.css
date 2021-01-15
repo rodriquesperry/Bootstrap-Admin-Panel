@@ -12,15 +12,14 @@ body {
 }
 
 .logo {
-  padding-left: 3.5rem;
   background-color: #36454F;
   border-bottom: 1px solid #cedce4;
+  height: 3.49rem;
 }
 
 .logo h3 {
   color: #5596bb;
-  width: 9.99rem;
-
+  width: 13.5rem;
 }
 
 .search {
@@ -33,7 +32,7 @@ body {
 
 .sidenav {
   display: block;
-  padding-top: 3rem;
+  padding-top: 1rem;
   position: fixed;
   width: 14.5rem;
   height: 100%;
@@ -67,13 +66,54 @@ body {
   margin-left: 0;
 }
 
-.page-header {
+.page-header-container {
   color: #60666b;
-  margin: 1.2rem 1.01rem;
+  margin: 1rem 0 1rem;
+  padding-top: 3rem;
 }
 
 #content {
   margin: 1rem 1.5rem 0 16.5rem;
+  display: block;
+}
+
+.card-title {
+  color: #60666b;
+}
+
+.project-top-cards {
+  max-height: 10rem;
+  margin-bottom: 1rem;
+}
+
+.projectsIcon {
+  font-size: 2rem;
+}
+
+.projectsNumber {
+  color: #60666b;
+}
+
+.trending-up {
+  color: green;
+}
+
+.trending-down {
+  color: red;
+}
+
+.taskTable {
+  overflow-x: scroll;
+}
+
+.tableSubTitle {
+  font-size: 11px;
+}
+
+.card-header {
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, .9);
+  background: linear-gradient(to right, #fff, rgb(230, 228, 228));
 }
 
 @media screen and (max-width: 375px) {
@@ -82,6 +122,19 @@ body {
   }
   #content {
     margin: 0 1.3rem 0 1rem;
+  }
+  .project-top-card {
+    margin: 0px !important;
+    border: none;
+  }
+  .projectCard {
+    margin-top: 23rem;
+  }
+  .statusText {
+    font-size: 4vw;
+  }
+  .taskTable {
+    margin-top: 1rem;
   }
 
 }
