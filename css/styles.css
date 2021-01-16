@@ -1,6 +1,6 @@
 * {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px; } 
 
 body {
   background-color: #f1f4f7; }
@@ -36,7 +36,7 @@ body {
 
 #left-side-menu-container ul li {
   list-style: none;
-  margin-top: 1.2rem;
+  margin-top: 5.2rem;
   margin-left: 1rem;
   font-family: "Montserrat", sans-serif; }
 
@@ -92,11 +92,31 @@ body {
   box-shadow: rgba(0, 0, 0, 0.9);
   background: linear-gradient(to right, #fff, #e6e4e4); }
 
+.activityTable {
+  overflow-x: scroll; 
+  display: block; }
+
+.activityTable td {
+  padding: 1rem; }
+
+.profilePic {
+  border-radius: 50%; 
+  margin-top: 1rem; }
+
+  .yourCalendar {
+    overflow-x: scroll;
+  }
+  .yourCalendar td{
+    font-size: 1.5rem;
+    border: .02rem solid #cedce4;
+
+  }
+
 @media screen and (max-width: 375px) {
   .logo {
     display: none; }
   #content {
-    margin: 0 1.3rem 0 1rem; }
+    margin: 0 0 0 1rem; }
   .project-top-card {
     margin: 0px !important;
     border: none; }
@@ -105,4 +125,8 @@ body {
   .statusText {
     font-size: 4vw; }
   .taskTable {
-    margin-top: 1rem; } }
+    margin-top: 1rem; } 
+  .yourCalendar {
+    margin-top: 1rem;  }
+  }
+   

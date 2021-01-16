@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
   <!-- Additional CSS -->
-  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@500&family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
@@ -298,7 +297,6 @@
       <!-- Start Task Table Card -->
       <div class="col">
         <div class="card taskTable">
-          <div class="card">
             <div class="card-body">
               <div class="card-title">
                 <h5>Tasks</h5>
@@ -419,19 +417,116 @@
                     </a>                  
                   </td>
                 </tr>
-               
-                
               </table>
             </div>
-          </div>
         </div>
       </div> 
     </div>
-
-        
-
-  
     <!-- End Task Table Card -->
+
+    <!-- Start Recent Activity Card -->
+    <div class="row mt-3 mb-2">
+      <div class="col-lg-6">
+        <div class="card recentActivity">
+          <div class="card-body">
+            <div class="card-title">
+              <h5>Recent Activity</h5>
+            </div>
+            <table class="table activityTable">
+              <tr>
+                <td>
+                  <img src="images/profile-pic2-thumbnail.png" alt="Profile Picture" class="profilePic">
+                </td>
+                <td>
+                  <h6 class="profileName text-muted">Rodriques Perry</h6>
+                  <p>Completed SCSS addition to...</p>
+                </td>
+                <td>
+                  <p class="text-muted">15 Jan 2021 1755</p>
+                </td>
+                <td>
+                  <h6 class="text-muted">Project</h6>
+                  <p>Admin Dashboard</small>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="images/profile-pic2-thumbnail.png" alt="Profile Picture" class="profilePic">
+                </td>
+                <td>
+                  <h6 class="profileName text-muted">Rodriques Perry</h6>
+                  <p>Completed SCSS addition to...</p>
+                </td>
+                <td>
+                  <p class="text-muted">15 Jan 2021 1755</p>
+                </td>
+                <td>
+                  <h6 class="text-muted">Project</h6>
+                  <p>Admin Dashboard</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="images/profile-pic2-thumbnail.png" alt="Profile Picture" class="profilePic">
+                </td>
+                <td>
+                  <h6 class="profileName text-muted">Rodriques Perry</h6>
+                  <p>Completed SCSS addition to...</p>
+                </td>
+                <td>
+                  <p class="text-muted">15 Jan 2021 1755</p>
+                </td>
+                <td>
+                  <h6 class="text-muted">Project</h6>
+                  <p>Admin Dashboard</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="images/profile-pic2-thumbnail.png" alt="Profile Picture" class="profilePic">
+                </td>
+                <td>
+                  <h6 class="profileName text-muted">Rodriques Perry</h6>
+                  <p>Completed SCSS addition to...</p>
+                </td>
+                <td>
+                  <p class="text-muted">15 Jan 2021 1755</p>
+                </td>
+                <td>
+                  <h6 class="text-muted">Project</h6>
+                  <p>Admin Dashboard</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card yourCalendar">
+          <div class="card-body">
+          <div class="card-title">
+            <h5 id="monthAndYear"></h5>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Sun</th>
+                  <th>Mon</th>
+                  <th>Tue</th>
+                  <th>Wed</th>
+                  <th>Thur</th>
+                  <th>Fri</th>
+                  <th>Sat</th>
+                </tr>
+              </thead>
+              <tbody id="calBody"></tbody>
+            </table>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- End recent Activity Card -->
     <!-- End Cards -->
     </div>
   </div>
