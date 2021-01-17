@@ -504,9 +504,17 @@
       <div class="col-lg-6">
         <div class="card yourCalendar">
           <div class="card-body">
-          <div class="card-title">
-            <h5 id="monthAndYear"></h5>
-            <table class="table">
+            <div class="card-title calTitle">
+              <h5 id="monthAndYear"></h5>
+              <div>
+                <div class="float-right">
+                  <a href="javascript: void(0);"><i class="material-icons prevMonth">keyboard_arrow_left</i></a>
+                  <a href="javascript:void(0);"><i class="material-icons nextMonth">keyboard_arrow_right</i></a>      
+                </div>
+            </div>
+          </div>
+            <div>
+              <table class="table">
               <thead>
                 <tr>
                   <th>Sun</th>
@@ -520,7 +528,6 @@
               </thead>
               <tbody id="calBody"></tbody>
             </table>
-          </div>
           </div>
         </div>
       </div>

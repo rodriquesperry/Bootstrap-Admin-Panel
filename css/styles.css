@@ -106,6 +106,12 @@ body {
   .yourCalendar {
     overflow-x: scroll;
   }
+
+  .calTitle {
+    display: flex;
+    flex-direction: row;
+  }
+
   .yourCalendar td{
     font-size: 1.5rem;
     border: .02rem solid #cedce4;

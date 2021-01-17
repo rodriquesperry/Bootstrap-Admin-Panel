@@ -42,7 +42,7 @@ body {
 
 .sidenav {
   display: block;
-  padding-top: 1rem;
+  padding-top: 1.9rem;
   position: fixed;
   width: 14.5rem;
   height: 100%;
@@ -140,6 +140,16 @@ body {
   overflow-x: scroll;
 }
 
+.calTitle {
+  display: flex;
+}
+
+.yourCalendar td{
+  font-size: 1.5rem;
+  border: .02rem solid #cedce4;
+
+}
+
 @media screen and (max-width: 375px) {
   .logo {
     display: none;
@@ -160,5 +170,7 @@ body {
   .taskTable {
     margin-top: 1rem;
   }
-
+  .yourCalendar {
+    margin-top: 1rem;  
+  }
 }
