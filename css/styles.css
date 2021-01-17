@@ -43,6 +43,10 @@ body {
 #left-side-menu-container ul li a {
   color: #cedce4; }
 
+.rotate {
+  transform: rotate(90deg);
+}
+
 .nav-header {
   margin: 1.5rem 0 0;
   font-family: "Kufam", cursive; }

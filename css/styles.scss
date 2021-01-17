@@ -63,6 +63,10 @@ body {
   color: $color-navText;
 }
 
+.subToggler {
+  transform: rotate(45deg);
+}
+
 .nav-header {
   margin: 1.5rem 0 0;
   font-family: $body-font;

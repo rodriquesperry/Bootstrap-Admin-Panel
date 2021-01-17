@@ -8,6 +8,14 @@ document.querySelector('.sideMenuToggler').addEventListener('click', function() 
   }
 });
 
+subTogglers = document.querySelectorAll('.subToggler');
+subTogglers.forEach(element => {
+  element.addEventListener('click', (e) => {
+    element.classList.toggle('rotate');
+  });
+});
+
+
 let doughnut = document.getElementById('projectStatusChart').getContext('2d');
 let doughnutChart = new Chart(doughnut, {
   type: 'doughnut',
