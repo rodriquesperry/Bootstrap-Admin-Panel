@@ -1,3 +1,4 @@
+
 $color-primary: #f1f4f7;
 $color-secondary: #36454F;
 $color-navText: #cedce4;
@@ -63,13 +64,18 @@ body {
   color: $color-navText;
 }
 
-.subToggler {
-  transform: rotate(45deg);
+#left-side-menu-container ul li a:hover {
+  text-decoration: none;
+}
+
+.rotate {
+  transform: rotate(90deg);
 }
 
 .nav-header {
   margin: 1.5rem 0 0;
   font-family: $body-font;
+  font-size: 2rem;
 }
 
 .menu-item {
@@ -108,11 +114,15 @@ body {
   color: $color-pageHeader;
 }
 
-.trending-up {
-  color: green;
+.material-icons.trending-up {
+  color:rgba(0, 255, 0, .8);
 }
 
-.trending-down {
+.material-icons.overdue {
+  color:rgba(0, 255, 0, .8);
+}
+
+.material-icons.trending-down {
   color: red;
 }
 
@@ -130,8 +140,7 @@ body {
   background: linear-gradient(to right, #fff, rgb(230, 228, 228));
 }
 
-.activityTable td {
-  padding: 1rem; 
+.activityTable  {
   overflow-x: scroll;
 }
 
@@ -151,7 +160,6 @@ body {
 .yourCalendar td{
   font-size: 1.5rem;
   border: .02rem solid #cedce4;
-
 }
 
 @media screen and (max-width: 375px) {
@@ -159,7 +167,7 @@ body {
     display: none;
   }
   #content {
-    margin: 0 1.3rem 0 1rem;
+    margin: 0 0rem 0 1rem;
   }
   .project-top-card {
     margin: 0px !important;
@@ -175,6 +183,6 @@ body {
     margin-top: 1rem;
   }
   .yourCalendar {
-    margin-top: 1rem;  
+    margin-top: 1rem;
   }
 }

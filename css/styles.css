@@ -1,6 +1,6 @@
 * {
   margin: 0px;
-  padding: 0px; } 
+  padding: 0px; }
 
 body {
   background-color: #f1f4f7; }
@@ -43,13 +43,16 @@ body {
 #left-side-menu-container ul li a {
   color: #cedce4; }
 
+#left-side-menu-container ul li a:hover {
+  text-decoration: none; }
+
 .rotate {
-  transform: rotate(90deg);
-}
+  transform: rotate(90deg); }
 
 .nav-header {
   margin: 1.5rem 0 0;
-  font-family: "Kufam", cursive; }
+  font-family: "Kufam", cursive;
+  font-size: 2rem; }
 
 .menu-item {
   margin-left: 0; }
@@ -79,10 +82,13 @@ body {
 .projectsNumber {
   color: #60666b; }
 
-.trending-up {
-  color: green; }
+.material-icons.trending-up {
+  color: rgba(0, 255, 0, 0.8); }
 
-.trending-down {
+.material-icons.overdue {
+  color: rgba(0, 255, 0, 0.8); }
+
+.material-icons.trending-down {
   color: red; }
 
 .taskTable {
@@ -97,36 +103,27 @@ body {
   background: linear-gradient(to right, #fff, #e6e4e4); }
 
 .activityTable {
-  overflow-x: scroll; 
-  display: block; }
-
-.activityTable td {
-  padding: 1rem; }
+  overflow-x: scroll; }
 
 .profilePic {
-  border-radius: 50%; 
+  border-radius: 50%;
   margin-top: 1rem; }
 
-  .yourCalendar {
-    overflow-x: scroll;
-  }
+.yourCalendar {
+  overflow-x: scroll; }
 
-  .calTitle {
-    display: flex;
-    flex-direction: row;
-  }
+.calTitle {
+  display: flex; }
 
-  .yourCalendar td{
-    font-size: 1.5rem;
-    border: .02rem solid #cedce4;
-
-  }
+.yourCalendar td {
+  font-size: 1.5rem;
+  border: .02rem solid #cedce4; }
 
 @media screen and (max-width: 375px) {
   .logo {
     display: none; }
   #content {
-    margin: 0 0 0 1rem; }
+    margin: 0 0rem 0 1rem; }
   .project-top-card {
     margin: 0px !important;
     border: none; }
@@ -135,8 +132,6 @@ body {
   .statusText {
     font-size: 4vw; }
   .taskTable {
-    margin-top: 1rem; } 
+    margin-top: 1rem; }
   .yourCalendar {
-    margin-top: 1rem;  }
-  }
-   
+    margin-top: 1rem; } }

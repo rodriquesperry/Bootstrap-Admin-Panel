@@ -4,24 +4,38 @@
   "description": "Bootstrap Admin Panel ",
   "main": "index.html",
   "scripts": {
-    "start": "npm run lite",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+    "start": "npm run watch:all",
     "scss": "node-sass -o css/ css/",
     "lite": "lite-server",
+    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+    "imagemin": "imagemin img/* -o dist/img",
+    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+    "clean": "rimraf dist",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Rodriques Perry",
   "license": "ISC",
   "dependencies": {
     "jquery-ui": "^1.12.1",
-    "jquery-ui-dist": "^1.12.1"
+    "jquery-ui-dist": "^1.12.1",
+    "material-design-icons-iconfont": "^6.1.0"
   },
   "devDependencies": {
     "bootstrap": "^4.5.3",
     "chart.js": "^2.9.4",
+    "copyfiles": "^2.2.0",
+    "imagemin-cli": "^5.1.0",
     "jquery": "^3.5.1",
     "lite-server": "^2.6.1",
     "material-design-icons": "^3.0.1",
     "node-sass": "^4.14.1",
-    "popper.js": "^1.16.1"
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1",
+    "popper.js": "^1.16.1",
+    "rimraf": "^3.0.2",
+    "usemin-cli": "^0.6.0"
   }
 }

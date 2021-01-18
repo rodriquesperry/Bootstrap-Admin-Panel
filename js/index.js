@@ -1,3 +1,6 @@
+let subTogglers = document.querySelectorAll('.subToggler');
+let menuItem = document.querySelectorAll('.menu-item');
+
 
 document.querySelector('.sideMenuToggler').addEventListener('click', function() {
   const sidenav = document.querySelector('.sidenav');
@@ -8,10 +11,22 @@ document.querySelector('.sideMenuToggler').addEventListener('click', function() 
   }
 });
 
-subTogglers = document.querySelectorAll('.subToggler');
-subTogglers.forEach(element => {
+
+menuItem.forEach(element => {
   element.addEventListener('click', (e) => {
+    $(function() {
+      $('.collapse').collapse('hide');
+    });
+    alert('Fix to make right arrow rotate down and up on click');
+  });
+});
+
+subTogglers.forEach(element => {
+  element.addEventListener('click', (e) => { 
     element.classList.toggle('rotate');
+    $(function() {
+      $('.collapse').collapse('hide');
+    }); 
   });
 });
 
@@ -95,7 +110,7 @@ function showCalendar(month, year) {
 }
 
 let nextMonth = document.querySelector('.nextMonth');
-nextMonth.addEventListener('click', function() {
+nextMonth.addEventListener('click', () => {
   currYear = (currMonth === 11) ? currYear + 1 : currYear;
   currMonth = (currMonth + 1) % 12;
   monthName = months[currMonth];
@@ -105,10 +120,12 @@ nextMonth.addEventListener('click', function() {
 });
 
 let previousMonth = document.querySelector('.prevMonth');
-  previousMonth.addEventListener('click', function() {
+previousMonth.addEventListener('click',() => {
   currYear = (currMonth === 0) ? currYear - 1 : currYear;
   currMonth = (currMonth === 0) ? 11 : currMonth -1;
   monthName = months[currMonth];
   showCalendar(currMonth, currYear);
   monthAndYear.innerHTML = `${monthName} ${currYear}`;
-});
+}
+)
+;

@@ -9,7 +9,7 @@
 
   <!-- Additional CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@500&family=Montserrat&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
   <link rel="stylesheet" href="css/styles.css">
   <title>Admin Dashboard</title>
 </head>
@@ -84,16 +84,16 @@
           </li>
           <li>
             <span><i class="material-icons align-middle">business_center</i></span>
-            <a href="#projectsSubmenu" data-toggle="collapse" aria-expanded="false" class="menu-item">Projects<i class="material-icons subToggler float-right">keyboard_arrow_right</i></a>
+              <a href="#projectsSubmenu" data-toggle="collapse" aria-expanded="false" class="menu-item">Projects<i class="material-icons subToggler float-right">keyboard_arrow_right</i></a>
             <ul class="collapse list-unstyled" id="projectsSubmenu">
               <li>
-                <a href="#" class="submenu-item">Working On It</a>
+                <a href="#" class="submenu-item">List</a>
               </li>
               <li>
-                <a href="#" class="submenu-item">Coming Soon</a>
+                <a href="#" class="submenu-item">Details</a>
               </li>
               <li>
-                <a href="#" class="submenu-item">Working Hard</a>
+                <a href="#" class="submenu-item">Create Project</a>
               </li>
             </ul>
           </li>
@@ -276,17 +276,17 @@
           <canvas class="my-3" id="projectStatusChart" width="400" height="230"></canvas>
           <div class="row">
             <div class="col-4 text-center">
-              <i class="material-icons text-center mt-3 mb-2 projectsIcon text-muted trending-up">trending_up</i>
+              <i class="material-icons text-center mt-3 mb-2 projectsIcon trending-up">trending_up</i>
               <h4 class="projectsNumber">89%</h4>
               <h6 class="text-muted statusText">Current</h6>
             </div>
             <div class="col-4 text-center">
-              <i class="material-icons text-center mt-3 mb-2 projectsIcon text-muted trending-down">trending_down</i>
+              <i class="material-icons text-center mt-3 mb-2 projectsIcon overdue">trending_down</i>
               <h4 class="projectsNumber">33%</h4>
               <h6 class="text-muted statusText">Overdue</h6>
             </div>
             <div class="col-4 text-center">
-              <i class="material-icons text-center mt-3 mb-2 projectsIcon text-muted trending-down">trending_down</i>
+              <i class="material-icons text-center mt-3 mb-2 projectsIcon trending-down">trending_down</i>
               <h4 class="projectsNumber">15%</h4>
               <h6 class="text-muted statusText">Complete</h6>
             </div>
@@ -294,6 +294,7 @@
         </div>  
       </div>
       <!-- End Project Status Card -->
+
       <!-- Start Task Table Card -->
       <div class="col">
         <div class="card taskTable">
@@ -501,6 +502,7 @@
           </div>
         </div>
       </div>
+    <!-- End recent Activity Card -->
       <div class="col-lg-6">
         <div class="card yourCalendar">
           <div class="card-body">
@@ -514,7 +516,7 @@
             </div>
           </div>
             <div>
-              <table class="table">
+              <table class="table calTable">
               <thead>
                 <tr>
                   <th>Sun</th>
@@ -532,8 +534,6 @@
         </div>
       </div>
     </div>
-    
-    <!-- End recent Activity Card -->
     <!-- End Cards -->
     </div>
   </div>
