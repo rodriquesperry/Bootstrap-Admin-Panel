@@ -27,6 +27,7 @@
     "bootstrap": "^4.5.3",
     "chart.js": "^2.9.4",
     "copyfiles": "^2.2.0",
+    "fullcalendar": "^5.5.1",
     "imagemin-cli": "^5.1.0",
     "jquery": "^3.5.1",
     "lite-server": "^2.6.1",

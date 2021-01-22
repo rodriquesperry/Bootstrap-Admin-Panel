@@ -14,24 +14,20 @@ document.querySelector('.sideMenuToggler').addEventListener('click', function() 
 
 menuItem.forEach(element => {
   element.addEventListener('click', (e) => {
+    element.classList.add('active');
+    if (element.classList.contains('dropdown') && element.classList.contains('active')) {
+      subTogglers.forEach(element => {
+        element.classList.toggle('rotate');
+      });
+    } 
     $(function() {
-      $('.collapse').collapse('hide');
+      $('.collapse').collapse('hide'); 
+
     });
-    alert('Fix to make right arrow rotate down and up on click');
-  });
+});
 });
 
-subTogglers.forEach(element => {
-  element.addEventListener('click', (e) => { 
-    element.classList.toggle('rotate');
-    $(function() {
-      $('.collapse').collapse('hide');
-    }); 
-  });
-});
-
-
-let doughnut = document.getElementById('projectStatusChart').getContext('2d');
+let doughnut = document.querySelector('#projectStatusChart').getContext('2d');
 let doughnutChart = new Chart(doughnut, {
   type: 'doughnut',
   data: {
@@ -95,7 +91,7 @@ function showCalendar(month, year) {
           cell = document.createElement('td');
           cellText = document.createTextNode(date);
           if (date === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
-            cell.classList.add('bg-danger');
+            cell.classList.add('bg-warning-modified');
           }
           cell.appendChild(cellText);
           row.appendChild(cell);
@@ -126,6 +122,4 @@ previousMonth.addEventListener('click',() => {
   monthName = months[currMonth];
   showCalendar(currMonth, currYear);
   monthAndYear.innerHTML = `${monthName} ${currYear}`;
-}
-)
-;
+});

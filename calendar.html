@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+  <!-- Additional CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Kufam:wght@500&family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+  <link href='node_modules/fullcalendar/main.css' rel='stylesheet' />
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Admin Dashboard</title>
+</head>
+
+<body>
+  <div class="wrapper"> 
+    <!-- Start Sidenav -->
+    <div class="navbar sidenav d-sm-none d-md-block" id="left-side-menu-container">
+      <ul>
+        <ul>
+          <div class="nav-header">
+            Navigation
+          </div>
+          <li class="active">
+            <span><i class="material-icons align-middle">dashboard</i>
+            </span>
+            <a href="#dashboardSubmenu" data-toggle="collapse" aria-expanded="false" class="menu-item dropdown">Dashboards<span class="material-icons subToggler float-right">keyboard_arrow_right</span></a>
+            <ul class="collapse list-unstyled" id="dashboardSubmenu">
+              <li class="active">
+                <a href="index.html" class="submenu-item">Projects</a>
+              </li>
+              <li>
+                <a href="#" class="submenu-item">In Progress</a>
+              </li>
+              <li>
+                <a href="#" class="submenu-item">Coming Soon</a>
+              </li>
+            </ul>
+          </li>
+          <div class="nav-header">
+            APPS
+          </div>
+
+          <li>
+            <span><span><i class="material-icons align-middle">date_range</i></span>
+            <a href="calendar.html" class="menu-item">Calendar</a>
+          </li>
+          <li>
+            <span><i class="material-icons align-middle">chat</i>
+              <a href="#" class="menu-item">Chat</a>
+            </li>
+          <li>
+            <span><span><i class="material-icons align-middle">storefront</i></span>
+            <a href="#ecommerceSubmenu" data-toggle="collapse" aria-expanded="false" class="menu-item dropdown">Ecomerce<i class="material-icons subToggler float-right">keyboard_arrow_right</i></a>
+            <ul class="collapse list-unstyled" id="ecommerceSubmenu">
+              <li>
+                <a href="#" class="submenu-item">Working On It</a>
+              </li>
+              <li>
+                <a href="#" class="submenu-item">Coming Soon</a>
+              </li>
+              <li>
+                <a href="#" class="submenu-item">More To Come</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span><i class="material-icons align-middle">mail</i></span>
+            <a href="#emailSubmenu" data-toggle="collapse" aria-expanded="false" class="menu-item">Email<i class="material-icons subToggler float-right">keyboard_arrow_right</i></a>
+            <ul class="collapse list-unstyled" id="emailSubmenu">
+              <li>
+                <a href="#" class="submenu-item">Working Hard</a>
+              </li>
+              <li>
+                <a href="#" class="submenu-item">In Progress</a>
+              </li>
+              <li>
+                <a href="#" class="submenu-item">Working On It</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span><i class="material-icons align-middle">business_center</i></span>
+              <a href="#projectsSubmenu" data-toggle="collapse" aria-expanded="false" class="menu-item">Projects<i class="material-icons subToggler float-right">keyboard_arrow_right</i></a>
+            <ul class="collapse list-unstyled" id="projectsSubmenu">
+              <li>
+                <a href="#" class="submenu-item">List</a>
+              </li>
+              <li>
+                <a href="#" class="submenu-item">Details</a>
+              </li>
+              <li>
+                <a href="#" class="submenu-item">Create Project</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span><i class="material-icons align-middle">groups</i></span>
+            <a href="#" class="menu-item">Social Feed</a>
+          </li>
+          <li>
+            <span><i class="material-icons align-middle">task_alt</i></span>
+            <a href="#tasksSubmenu" data-toggle="collapse" aria-expanded="false" class="menu-item">Tasks<i class="material-icons subToggler float-right">keyboard_arrow_right</i></a>
+            <ul class="collapse list-unstyled" id="tasksSubmenu">
+              <li>
+                <a href="#" class="submenu-item">Coming Soon</a>
+              </li>
+              <li>
+                <a href="#" class="submenu-item">Coming Soon</a>
+              </li>
+              <li>
+                <a href="#" class="submenu-item">In Progress</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span><i class="material-icons align-middle">text_snippet</i></span>
+            <a href="#" class="menu-item">File Manager</a>
+          </li>
+          <div class="nav-header">
+            Components
+          </div>
+          <li>
+            <span><i class="material-icons align-middle">view_list</i></span>
+            <a href="#formsSubmenu" data-toggle="collapse" aria-expanded="false" class="menu-item">Forms<i class="material-icons subToggler float-right">keyboard_arrow_right</i></a>
+            <ul class="collapse list-unstyled" id="formsSubmenu">
+              <li>
+                <a href="#" class="submenu-item">Working On It</a>
+              </li>
+              <li>
+                <a href="#" class="submenu-item">Coming Soon</a>
+              </li>
+              <li>
+                <a href="#" class="submenu-item">Working Hard</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span><i class="material-icons align-middle">insights</i></span>
+            <a href="#chartsSubmenu" data-toggle="collapse" aria-expanded="false" class="menu-item">Charts<i class="material-icons subToggler float-right">keyboard_arrow_right</i></a>
+            <ul class="collapse list-unstyled" id="chartsSubmenu">
+              <li>
+                <a href="#" class="submenu-item">Coming Soon</a>
+              </li>
+              <li>
+                <a href="#" class="submenu-item">In Progress</a>
+              </li>
+              <li>
+                <a href="#" class="submenu-item">Working On It</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span><i class="material-icons align-middle">table_view</i></span>
+            <a href="#tablesSubmenu" data-toggle="collapse" aria-expanded="false" class="menu-item">Tables<i class="material-icons subToggler float-right">keyboard_arrow_right</i></a>
+            <ul class="collapse list-unstyled" id="tablesSubmenu">
+              <li>
+                <a href="#" class="submenu-item">In Progress</a>
+              </li>
+              <li>
+                <a href="#" class="submenu-item">In Progress</a>
+              </li>
+              <li>
+                <a href="#" class="submenu-item">Coming Soon</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span><i class="material-icons align-middle">place</i></span>
+            <a href="#mapsSubmenu" data-toggle="collapse" aria-expanded="false" class="menu-item">Maps<i class="material-icons subToggler float-right">keyboard_arrow_right</i></a>
+            <ul class="collapse list-unstyled" id="mapsSubmenu">
+              <li>
+                <a href="#" class="submenu-item">Coming Soon</a>
+              </li>
+              <li>
+                <a href="#" class="submenu-item">Working Hard</a>
+              </li>
+              <li>
+                <a href="#" class="submenu-item">In Progress</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+    </div>
+
+    <!-- Start Main Content Area -->
+    <div id="content">
+    <!-- Start Top Nav -->
+    <div class="topbar navbar-light bg-light fixed-top">
+      <div class="logo">
+        <a href="#" class="navbar-brand">
+          <h3 class="text-center">Dashboard</h3>
+        </a>
+      </div> 
+      <div class="col-sm-12 col-lg-10">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button class="navbar-toggler sideMenuToggler mr-auto">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <!-- End Top Nav -->
+    <!-- Page Header -->
+    <div class="row page-header-container">
+      <div class="page-header">
+        <h5>Calendar</h5>
+      </div>
+    </div>
+    <!-- End Page Header -->
+
+    <!-- Start Cards -->
+    <!-- Headline Cards -->
+    <!-- Calendar -->
+    <div class="container calBody">
+      <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="col-12">
+              <div id="calendar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- End Cards -->
+    </div>
+  </div>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/node_modules/jquery-ui-dist/jquery-ui.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/fullcalendar/main.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/cal.js"></script>
+</body>
+
+</html>
+
