@@ -1,8 +1,15 @@
 
 document.addEventListener('DOMContentLoaded', function() {
-  var calendarEl = document.querySelector('#calendar');
-  var calendar = new FullCalendar.Calendar(calendarEl, {
-    initialView: 'dayGridMonth'
+  let calendarEl = document.querySelector('#calendar');
+  let calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'dayGridMonth',
+    headerToolbar: {
+      start: 'dayGridMonth,timeGridWeek,timeGridDay,list',
+      center: 'title',
+      end: 'prev,next'
+    }
   });
+
   calendar.render();
 });
+
